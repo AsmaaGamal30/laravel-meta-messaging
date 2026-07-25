@@ -5,12 +5,8 @@
 [![PHP](https://img.shields.io/badge/php-8.2%20%7C%208.3%20%7C%208.4-777BB4)](composer.json)
 [![Laravel](https://img.shields.io/badge/laravel-12%20%7C%2013-FF2D20)](composer.json)
 [![License](https://img.shields.io/github/license/AsmaaGamal30/laravel-meta-messaging)](LICENSE.md)
-
-<!--
-  Once the package is live on Packagist, add these back:
-  [![Latest Version](https://img.shields.io/packagist/v/asmaa-gamal/laravel-meta-messaging.svg)](https://packagist.org/packages/asmaa-gamal/laravel-meta-messaging)
-  [![Downloads](https://img.shields.io/packagist/dt/asmaa-gamal/laravel-meta-messaging.svg)](https://packagist.org/packages/asmaa-gamal/laravel-meta-messaging)
--->
+[![Latest Version](https://img.shields.io/packagist/v/asmaa-gamal/laravel-meta-messaging.svg)](https://packagist.org/packages/asmaa-gamal/laravel-meta-messaging)
+[![Downloads](https://img.shields.io/packagist/dt/asmaa-gamal/laravel-meta-messaging.svg)](https://packagist.org/packages/asmaa-gamal/laravel-meta-messaging)
 
 
 Send Facebook Messenger and Instagram messages from Laravel — every message type, with a fluent
@@ -318,9 +314,18 @@ Anything a channel lacks is refused locally with a message naming the alternativ
 Bug reports and pull requests are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). New Meta
 error codes are especially welcome; adding one is a single line in `ErrorCatalog`.
 
-## Credits
+## Contact
 
-Built by [Asmaa Gamal](https://github.com/AsmaaGamal30).
+Built and maintained by **Asmaa Gamal**.
+
+- 📧 Email — [asmagamal311@gmail.com](mailto:asmagamal311@gmail.com)
+- 💼 LinkedIn — [linkedin.com/in/asmaagamal30](https://www.linkedin.com/in/asmaagamal30/)
+- 🐙 GitHub — [@AsmaaGamal30](https://github.com/AsmaaGamal30)
+
+For bugs and feature requests, please open an
+[issue](https://github.com/AsmaaGamal30/laravel-meta-messaging/issues) rather than emailing —
+it keeps the answer where the next person will find it. Email and LinkedIn are best for
+consulting enquiries or anything you would rather not discuss in public.
 
 ## License
 
