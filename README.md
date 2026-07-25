@@ -6,7 +6,11 @@
 [![Laravel](https://img.shields.io/badge/laravel-12%20%7C%2013-FF2D20)](composer.json)
 [![License](https://img.shields.io/github/license/AsmaaGamal30/laravel-meta-messaging)](LICENSE.md)
 [![Latest Version](https://img.shields.io/packagist/v/asmaa-gamal/laravel-meta-messaging.svg)](https://packagist.org/packages/asmaa-gamal/laravel-meta-messaging)
+
+<!-- Worth adding once adoption is meaningful:
 [![Downloads](https://img.shields.io/packagist/dt/asmaa-gamal/laravel-meta-messaging.svg)](https://packagist.org/packages/asmaa-gamal/laravel-meta-messaging)
+-->
+
 
 
 Send Facebook Messenger and Instagram messages from Laravel — every message type, with a fluent
