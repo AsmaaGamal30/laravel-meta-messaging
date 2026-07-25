@@ -66,7 +66,11 @@ META_INSTAGRAM_LOGIN_TYPE=instagram
 META_APP_SECRET=your-app-secret
 ```
 
-Requires PHP 8.2+ and Laravel 11, 12, or 13.
+Requires PHP 8.2+ and Laravel 12 or 13.
+
+> Laravel 11 is not supported. It has reached end of life with open security advisories, so
+> Composer refuses to install any 11.x release — there is no version of it this package could
+> target safely.
 
 ## Quick start
 

@@ -45,6 +45,8 @@ First release.
 
 ### Notes
 
+- Requires PHP 8.2+ and Laravel 12 or 13. Laravel 11 is deliberately excluded: it is end of life
+  with open security advisories, so Composer blocks every 11.x release.
 - Meta retired the `CONFIRMED_EVENT_UPDATE`, `ACCOUNT_UPDATE`, and `POST_PURCHASE_UPDATE` message
   tags on 2026-04-27. This package refuses them locally rather than letting Meta answer with an
   unexplained `(#100) Invalid parameter`.
