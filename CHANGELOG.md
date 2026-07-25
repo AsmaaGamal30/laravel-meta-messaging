@@ -7,6 +7,20 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-07-25
+
+### Fixed
+
+- The maintainer email in the `authors` block of `composer.json` was wrong, so Packagist listed
+  the wrong contact for the package. v1.0.0 carries the incorrect address permanently — stable
+  versions on Packagist are immutable and cannot be re-pointed once published.
+
+### Added
+
+- A Contact section in the README, with email and LinkedIn.
+- A `support` block in `composer.json`, so Packagist links to issues, source, docs, and email.
+- Packagist version and download badges, now that the package is published.
+
 ## [1.0.0] - 2026-07-25
 
 First release.
@@ -53,5 +67,6 @@ First release.
 - The 24-hour messaging window is **not** tracked locally. Meta's own response is mapped to
   `MessagingWindowExpiredException` with an explanation.
 
-[Unreleased]: https://github.com/AsmaaGamal30/laravel-meta-messaging/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/AsmaaGamal30/laravel-meta-messaging/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/AsmaaGamal30/laravel-meta-messaging/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/AsmaaGamal30/laravel-meta-messaging/releases/tag/v1.0.0
