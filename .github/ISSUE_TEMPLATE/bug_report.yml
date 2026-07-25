@@ -1,0 +1,53 @@
+name: Bug report
+description: Something behaves differently than documented.
+labels: [bug]
+
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you expected, and what you got instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Code that triggers it
+      render: php
+      placeholder: |
+        Meta::facebook()->to($psid)->text('Hello')->send();
+    validations:
+      required: true
+
+  - type: textarea
+    id: error
+    attributes:
+      label: The error
+      description: >
+        Paste `$exception->toArray()` if you have it — access tokens are already stripped from it.
+        Otherwise paste Meta's raw error body with credentials removed.
+      render: json
+
+  - type: input
+    id: package-version
+    attributes:
+      label: Package version
+      placeholder: 1.0.0
+    validations:
+      required: true
+
+  - type: input
+    id: versions
+    attributes:
+      label: PHP and Laravel versions
+      placeholder: PHP 8.3, Laravel 12.4
+    validations:
+      required: true
+
+  - type: input
+    id: graph-version
+    attributes:
+      label: Graph API version
+      placeholder: v25.0

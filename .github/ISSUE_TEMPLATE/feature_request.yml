@@ -1,0 +1,24 @@
+name: Feature request
+description: Suggest something the package should support.
+labels: [enhancement]
+
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What are you trying to do that this package makes hard today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you have in mind
+      render: php
+
+  - type: input
+    id: meta-docs
+    attributes:
+      label: Link to Meta's documentation
+      description: If this maps to a documented Graph API feature, link it.

@@ -1,0 +1,72 @@
+{
+    "name": "asmaa-gamal/laravel-meta-messaging",
+    "description": "Send Facebook Messenger and Instagram messages from Laravel — every message type, with pre-flight validation and clear, structured errors.",
+    "keywords": [
+        "laravel",
+        "meta",
+        "facebook",
+        "messenger",
+        "instagram",
+        "messaging",
+        "graph-api",
+        "send-api",
+        "chatbot"
+    ],
+    "homepage": "https://github.com/AsmaaGamal30/laravel-meta-messaging",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Asmaa Gamal",
+            "email": "asmaaclaudeai@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^11.0|^12.0|^13.0",
+        "illuminate/http": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.18",
+        "mockery/mockery": "^1.6",
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "pestphp/pest": "^3.0|^4.0",
+        "phpstan/phpstan": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AsmaaGamal\\MetaMessaging\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AsmaaGamal\\MetaMessaging\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint",
+        "lint": "vendor/bin/pint --test",
+        "analyse": "vendor/bin/phpstan analyse"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AsmaaGamal\\MetaMessaging\\MetaMessagingServiceProvider"
+            ],
+            "aliases": {
+                "Meta": "AsmaaGamal\\MetaMessaging\\Facades\\Meta"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

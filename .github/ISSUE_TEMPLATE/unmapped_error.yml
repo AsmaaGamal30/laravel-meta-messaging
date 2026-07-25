@@ -1,0 +1,51 @@
+name: Unmapped Meta error code
+description: You hit a Meta error that surfaced as a generic MetaApiException.
+labels: [error-catalog]
+
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Thanks — these are the most useful reports this project gets. Meta ships error codes
+        without documenting them, so real sightings are how the catalog grows.
+
+  - type: textarea
+    id: error-body
+    attributes:
+      label: Meta's raw error body
+      description: Remove any access token before pasting.
+      render: json
+      placeholder: |
+        {
+          "error": {
+            "message": "...",
+            "type": "OAuthException",
+            "code": 1234,
+            "error_subcode": 5678,
+            "fbtrace_id": "..."
+          }
+        }
+    validations:
+      required: true
+
+  - type: textarea
+    id: cause
+    attributes:
+      label: What actually caused it
+      description: If you worked out the real cause, say so — that becomes the hint text.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: channel
+    attributes:
+      label: Channel
+      options: [Facebook Messenger, Instagram, Both]
+    validations:
+      required: true
+
+  - type: input
+    id: endpoint
+    attributes:
+      label: Endpoint
+      placeholder: "{page-id}/messages"
