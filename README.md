@@ -1,8 +1,17 @@
 # Laravel Meta Messaging
 
-[![Tests](https://github.com/AsmaaGamal30/laravel-meta-messaging/actions/workflows/tests.yml/badge.svg)](https://github.com/AsmaaGamal30/laravel-meta-messaging/actions/workflows/tests.yml)
-[![Latest Version](https://img.shields.io/packagist/v/asmaa-gamal/laravel-meta-messaging.svg)](https://packagist.org/packages/asmaa-gamal/laravel-meta-messaging)
-[![License](https://img.shields.io/packagist/l/asmaa-gamal/laravel-meta-messaging.svg)](LICENSE.md)
+[![Tests](https://github.com/AsmaaGamal30/laravel-meta-messaging/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/AsmaaGamal30/laravel-meta-messaging/actions/workflows/tests.yml)
+[![Code quality](https://github.com/AsmaaGamal30/laravel-meta-messaging/actions/workflows/quality.yml/badge.svg?branch=main)](https://github.com/AsmaaGamal30/laravel-meta-messaging/actions/workflows/quality.yml)
+[![PHP](https://img.shields.io/badge/php-8.2%20%7C%208.3%20%7C%208.4-777BB4)](composer.json)
+[![Laravel](https://img.shields.io/badge/laravel-12%20%7C%2013-FF2D20)](composer.json)
+[![License](https://img.shields.io/github/license/AsmaaGamal30/laravel-meta-messaging)](LICENSE.md)
+
+<!--
+  Once the package is live on Packagist, add these back:
+  [![Latest Version](https://img.shields.io/packagist/v/asmaa-gamal/laravel-meta-messaging.svg)](https://packagist.org/packages/asmaa-gamal/laravel-meta-messaging)
+  [![Downloads](https://img.shields.io/packagist/dt/asmaa-gamal/laravel-meta-messaging.svg)](https://packagist.org/packages/asmaa-gamal/laravel-meta-messaging)
+-->
+
 
 Send Facebook Messenger and Instagram messages from Laravel — every message type, with a fluent
 API, pre-flight validation, and errors that actually tell you what went wrong.
