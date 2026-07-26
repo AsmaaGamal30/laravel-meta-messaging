@@ -28,7 +28,7 @@ use Illuminate\Queue\InteractsWithQueue;
  * would sit in plain text in the queue backend (database, Redis, SQS, …) and
  * in the failed_jobs table if the job fails.
  */
-final class SendMetaMessageJob implements ShouldQueue, ShouldBeEncrypted
+final class SendMetaMessageJob implements ShouldBeEncrypted, ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable;
 
