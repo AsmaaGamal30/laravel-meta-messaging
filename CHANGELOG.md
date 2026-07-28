@@ -7,6 +7,20 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-07-28
+
+### Security
+
+- Queued messages no longer leave credentials readable in the queue backend. `SendMetaMessageJob`
+  serializes a `MetaRequest`, which carries the account's access token and app secret, so every
+  `->queue()` call wrote those in plain text to the queue store — database, Redis, SQS — and to
+  the `failed_jobs` table whenever a job failed. The job now implements `ShouldBeEncrypted`, so
+  Laravel encrypts the payload with the application key before it leaves the process.
+
+  Applications that have queued messages should treat any token that sat in a queue or in
+  `failed_jobs` as exposed and rotate it. Jobs already enqueued under 1.0.1 stay readable and
+  still run; encryption applies to jobs dispatched from this version on.
+
 ## [1.0.1] - 2026-07-25
 
 ### Fixed
@@ -67,6 +81,7 @@ First release.
 - The 24-hour messaging window is **not** tracked locally. Meta's own response is mapped to
   `MessagingWindowExpiredException` with an explanation.
 
-[Unreleased]: https://github.com/AsmaaGamal30/laravel-meta-messaging/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/AsmaaGamal30/laravel-meta-messaging/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/AsmaaGamal30/laravel-meta-messaging/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/AsmaaGamal30/laravel-meta-messaging/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/AsmaaGamal30/laravel-meta-messaging/releases/tag/v1.0.0
